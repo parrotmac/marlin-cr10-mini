@@ -1,3 +1,26 @@
+# Isaac's Personal config
+
+Used the 'Auto Build Marlin' VS Code extension with PlatformIO
+
+Since I can't figure out how to tell PlatformIO to use the USBASP as the programmer tool, upload resutling firmware with `avrdude`.
+
+```bash
+avrdude -v -c usbasp -p ATmega1284P -U /home/isaac/Dev/Marlin/.pio/build/melzi_optiboot_optimized/firmware.hex
+```
+
+The following image attempts to document the pin configuration for programming.
+<img src="./cr10-mini-isp-header.png>
+
+The pinout of the ISP header is as follows
+
+< Metal Case Edge >
+|      |      |      |
+| ---- | ---- | ---- |
+|  VCC | MOSI | GND  |
+| MISO | SCK  | RST  |
+< Rest of circuit Board >
+
+
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
 <h1 align="center">Marlin 3D Printer Firmware</h1>
