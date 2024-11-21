@@ -1,4 +1,4 @@
-# Isaac's Personal config
+# Isaac's Personal CR-10 Mini Config
 
 Used the 'Auto Build Marlin' VS Code extension with PlatformIO
 
@@ -9,7 +9,7 @@ avrdude -v -c usbasp -p ATmega1284P -U /home/isaac/Dev/Marlin/.pio/build/melzi_o
 ```
 
 The following image attempts to document the pin configuration for programming.
-<img src="./cr10-mini-isp-header.png>
+<img src="cr10-mini-isp-header.png">
 
 The pinout of the ISP header is as follows
 
